@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  color: white;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./assets/hosein-zanbori-wvbOWcIDuYg-unsplash.jpg);
+}
+
+.form-container {
+  background: linear-gradient(
+    rgba(106, 146, 111, 0.66),
+    rgba(36, 98, 44, 0.464)
+  );
+  border-radius: 4px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+header,
+form > * {
+  align-self: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 4px;
+  font-size: 1.1rem;
+}
+
+.item > * {
+  align-self: center;
+}
+
+span {
+  color: rgba(255, 255, 255, 0.563);
+}
+
+input,
+textarea,
+select {
+  -webkit-appereance: none;
+  outline: none;
+
+  border: 1.5px solid rgba(6, 60, 6, 0.84);
+  border-radius: 6px;
+  background-color: rgba(181, 186, 181, 0.826);
+
+  min-height: calc(0.9em + (0.8em * 2) + 0.6em);
+  padding: 0.8em;
+  width: 100%;
+  max-width: 425px;
+  transition: background-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1.5px solid rgba(6, 60, 6, 0.84);
+  background-color: rgba(199, 241, 199, 0.826);
+}
+
+.buttons {
+  margin: 20px;
+}
+
+button {
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  border-style: none;
+  border-radius: 6px;
+  background-color: rgb(218, 240, 218);
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(19, 157, 19);
+}

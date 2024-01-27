@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Favorite Music Artist</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <header>
+            <h2 class="form-title">Your Favorite Music Artist</h2>
+        </header>
+
+        <form action="https://httpbin.org/get" method="get">
+
+            <div class="item">
+                <label for="user-name">Your Name</label>
+                <input type="text" name="user-name" id="user-name" autofocus required>
+            </div>
+
+            <div class="item">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="user-name" required>
+            </div>
+
+            <div class="item">
+                <label for="phone-number">Phone Number <span>(optional)</span></label>
+                <input type="tel" name="phone-number" id="phone-number" placeholder="e.g.0712345678">
+            </div>
+
+            <div class="item">
+                <label for="music-genre">Music Genre</label>
+                <select name="music-genre" id="music-genre" required>
+                    <option class="choose-one" disabled selected>Choose one...</option>
+                    <option value="Classic">Classic</option>
+                    <option value="Electronic">Electronic</option>
+                    <option value="Electronic">Ambient</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Popular">Popular</option>
+                    <option value="Country">Country</option>
+                    <option value="Hip-hop">Hip-hop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Experimental">Experimental</option>
+                </select>
+            </div>
+
+            <div class="item">
+                <label for="reason">Why do you like it?</label>
+                <textarea name="reason" id="reason" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="buttons">
+                <button class="submit" type="submit">Submit</button>
+                <button class="reset" type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
